@@ -4,6 +4,7 @@ Every design version lives in its own folder and has a Git tag, so earlier versi
 
 | Version | Folder | Git tag | Summary |
 |---|---|---|---|
+| v3 | [`v3/`](v3/) | `v3` | "The Tap", refined: smoother fly-through hero, minimal manifesto, About letter assembly, softer services with clear numbers, client and publisher logos, clients before supply, clearer section labels. |
 | v2 | [`v2/`](v2/) | `v2` | "The Tap": a scroll-driven story built on GSAP, Lenis and Matter.js. Inspired by jeskojets.com, flim.ai and maxmilkin.com. |
 | v1 | [`v1/`](v1/) | `v1` | Bright motion site in plain HTML/CSS/JS, built from the media kit. |
 
@@ -21,9 +22,9 @@ python3 -m http.server 8000
 
 Each version folder is a complete static site. Upload the contents of one folder (for example `v2/`) to the web root of any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages or your current host). No build step is necessary.
 
-## v2 notes
+## v2 and v3 notes
 
-- **Libraries** are bundled in `v2/assets/vendor/`, so the site does not depend on a CDN:
+- **Libraries** are bundled in each version's `assets/vendor/` folder, so the site does not depend on a CDN:
   - GSAP 3.13 + ScrollTrigger (GreenSock standard no-charge license)
   - Lenis 1.3 (MIT)
   - Matter.js 0.20 (MIT), loaded only when the network section comes near
@@ -32,3 +33,8 @@ Each version folder is a complete static site. Upload the contents of one folder
 - **Contact form**: opens the visitor's email app (to parth@tapcoremedia.net) or WhatsApp (+91 96258 98987) with the brief filled in. To store leads without email, connect a form service (for example Formspree) in `v2/assets/js/main.js` (search for `mailto:`).
 - **Content sources**: the media kit and the current tapcoremedia.com site (tagline, 50M+ installs a month, publishers, contact details). Client and publisher names show as text, not as logos.
 - **Illustrative UI**: the phone ad, the retargeting notifications and the fraud-filter counter are animations. They are not live data.
+
+## v3 additions
+
+- **Logos**: client logos were cropped from the media kit (14) and taken from the current tapcoremedia.com site (Amazon, Crypto.com, Flipkart, Lazada, Tokopedia). Publisher logos also come from the current site. All are in `v3/assets/img/logos/` as transparent PNGs. They show in grey and turn to full color on hover (always in color on touch screens).
+- **Copy**: the v3 page uses no em-dashes.
