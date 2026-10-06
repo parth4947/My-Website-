@@ -2,432 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Tapcore Media — Mobile growth, paid on outcomes</title>
-  <meta name="description" content="Tapcore Media is a performance user acquisition partner for Android and iOS apps. CPI, CPA, CPR, CPS and Rev Share campaigns across 80+ countries and 1,500+ publishers.">
-  <meta name="theme-color" content="#F6F8FC">
-  <link rel="canonical" href="https://www.tapcoremedia.com/">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Tapcore Media — Mobile growth, paid on outcomes">
-  <meta property="og:description" content="Performance user acquisition for Android and iOS apps. Pay for the event that matters to you.">
-  <meta property="og:url" content="https://www.tapcoremedia.com/">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..700&family=Outfit:wght@400..800&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script defer src="assets/js/main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tapcore Media — Website versions</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="v2/assets/img/favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --paper: #FBF6EC; --ink: #0B1B33; --ink-2: #4E5A6E; --line: rgba(11,27,51,.14); --blue: #2B5BFF; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: var(--paper); color: var(--ink); font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; padding: 56px 16px; }
+    main { max-width: 880px; margin: 0 auto; }
+    .mono { font: 500 12px ui-monospace, Menlo, monospace; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+    h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1; letter-spacing: -.03em; margin: 12px 0 8px; }
+    p.lead { color: var(--ink-2); margin: 0 0 36px; }
+    a.card { display: grid; grid-template-columns: 80px 1fr auto; gap: 20px; align-items: center; padding: 24px 0; border-top: 1px solid var(--ink); color: inherit; text-decoration: none; transition: padding-left .3s; }
+    a.card:last-of-type { border-bottom: 1px solid var(--ink); }
+    a.card:hover { padding-left: 12px; }
+    a.card:hover .go { color: var(--blue); transform: translateX(4px); }
+    .v { font-size: 40px; font-weight: 800; letter-spacing: -.04em; }
+    .card h2 { margin: 0 0 4px; font-size: 20px; }
+    .card p { margin: 0; color: var(--ink-2); font-size: 15px; }
+    .go { font-size: 24px; transition: transform .3s, color .3s; }
+    .tag { display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 99px; background: var(--ink); color: #fff; font-size: 11px; vertical-align: 3px; }
+    @media (max-width: 560px) { a.card { grid-template-columns: 56px 1fr auto; gap: 12px; } .v { font-size: 30px; } }
+  </style>
 </head>
 <body>
-  <!-- Logo mark (traced from the Tapcore media kit) -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#2B5BFF"/>
-        <stop offset="1" stop-color="#23C4E8"/>
-      </linearGradient>
-      <symbol id="mark" viewBox="0 0 536 638"><path fill-rule="evenodd" d="M 84 12 C 44 21,25 60,41 100 C 46 114,55 124,68 131 C 70 132,90 139,96 141 C 97 142,100 143,102 144 C 103 144,105 145,106 145 C 106 145,108 145,109 146 C 111 147,115 148,128 152 C 132 154,137 155,138 156 C 140 157,141 157,169 167 C 181 171,193 175,196 176 C 200 178,221 185,228 188 C 231 188,235 190,237 191 C 238 191,240 192,241 192 C 242 192,243 192,244 193 C 244 193,252 196,261 199 C 286 208,286 208,288 209 C 289 210,290 210,291 210 C 292 210,294 211,295 211 C 298 213,311 217,335 225 C 346 229,360 237,366 243 C 369 246,376 260,378 265 C 383 276,381 296,374 306 C 373 308,372 310,372 311 C 372 314,357 327,344 335 C 337 340,326 348,318 353 C 311 358,303 364,300 366 C 296 368,290 372,286 375 C 282 378,276 382,272 385 C 269 387,262 391,258 394 C 254 397,244 404,235 410 C 226 416,217 422,213 425 C 209 427,202 433,196 437 C 189 441,183 446,180 447 C 178 449,173 453,168 456 C 163 459,159 462,159 462 C 158 463,153 466,148 470 C 142 473,135 478,132 480 C 129 483,125 485,124 486 C 123 486,118 490,113 493 C 108 496,100 502,94 507 C 87 511,78 517,72 521 C 66 526,61 529,60 529 C 60 529,59 530,59 530 C 58 531,58 532,57 532 C 56 532,50 536,38 545 C 34 547,26 553,20 557 L 9 564 9 596 C 9 614,9 629,10 629 C 10 630,12 629,14 628 C 18 627,20 626,43 612 C 50 607,56 604,57 604 C 57 604,59 603,60 602 C 63 599,77 591,88 585 C 90 584,93 582,94 582 C 95 581,99 579,102 576 C 106 574,112 571,116 569 C 119 567,124 563,128 561 C 134 558,150 548,154 546 C 161 542,173 535,173 535 C 174 535,177 533,181 531 C 188 526,220 507,220 507 C 221 507,237 498,241 495 C 242 494,245 492,247 491 C 250 490,266 480,283 470 C 286 468,288 467,289 467 C 289 467,291 466,293 464 C 295 463,300 460,304 458 C 308 455,312 453,313 452 C 314 452,315 451,315 451 C 316 451,318 450,319 449 C 321 447,326 444,330 442 C 333 440,337 438,338 437 C 339 437,342 435,344 434 C 347 432,350 431,351 430 C 362 423,372 417,373 417 C 373 417,376 415,379 414 C 382 412,384 410,385 410 C 385 410,387 409,389 408 C 394 405,425 386,430 383 C 432 382,436 380,439 378 C 442 376,447 373,450 371 C 459 366,463 364,466 362 C 467 361,469 360,469 360 C 470 360,471 359,472 359 C 473 358,477 356,480 353 C 498 344,518 328,518 324 C 518 323,519 321,519 320 C 524 310,525 304,525 284 C 525 265,525 263,523 256 C 516 234,508 223,493 215 C 490 213,486 211,484 210 C 483 209,478 206,474 204 C 464 199,456 194,450 191 C 447 189,444 188,431 181 C 428 179,419 174,412 170 C 405 167,399 163,398 163 C 397 162,395 161,394 160 C 390 158,388 157,374 149 C 368 146,363 143,362 142 C 361 142,360 141,359 141 C 358 141,356 140,355 139 C 353 137,349 135,346 133 C 342 132,338 130,336 128 C 332 126,327 123,313 116 C 309 113,304 111,302 109 C 300 108,295 106,291 104 C 285 100,273 94,268 91 C 265 89,254 83,245 78 C 242 77,237 74,235 73 C 233 71,228 68,223 66 C 218 64,213 61,211 60 C 207 57,201 54,186 46 C 181 43,175 40,172 38 C 169 36,163 33,158 30 C 153 28,147 24,144 22 C 126 12,121 10,104 10 C 96 10,88 11,84 12 M 197 227 C 196 228,199 230,206 234 C 216 240,225 249,228 259 C 231 265,231 284,229 286 C 228 287,228 289,228 290 C 228 293,217 316,213 324 C 210 328,207 332,206 333 C 206 334,203 336,202 339 C 200 342,196 347,194 349 C 192 351,189 355,188 356 C 180 369,126 420,99 442 C 97 444,91 449,85 453 C 73 463,65 471,66 472 C 66 473,69 472,79 465 C 85 461,92 456,96 454 C 100 452,107 447,111 444 C 116 440,123 436,126 434 C 129 432,134 428,139 425 C 143 422,154 415,163 408 C 173 402,181 397,181 396 C 182 395,189 391,196 386 C 204 381,215 373,220 369 C 226 366,235 360,240 357 C 244 353,251 349,254 346 C 257 344,260 342,260 342 C 261 342,282 328,287 323 C 297 315,302 303,302 288 C 302 276,300 270,292 261 C 289 257,272 245,269 245 C 269 245,267 244,265 243 C 253 238,239 234,223 231 C 208 228,206 228,204 227 C 202 226,197 226,197 227"/></symbol>
-    </defs>
-  </svg>
+  <main>
+    <p class="mono">Tapcore Media · Website</p>
+    <h1>Versions</h1>
+    <p class="lead">Each version lives in its own folder and is tagged in Git, so none of them overwrites another.</p>
 
-  <a class="skip" href="#main">Skip to content</a>
-  <div class="progress" aria-hidden="true"><span></span></div>
-  <div class="cursor" aria-hidden="true"><span></span></div>
-
-  <!-- Ambient background -->
-  <div class="ambient" aria-hidden="true">
-    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
-  </div>
-
-  <header class="nav" id="nav">
-    <a class="brand" href="#top" aria-label="Tapcore Media home">
-      <svg class="brand-mark" aria-hidden="true"><use href="#mark" fill="url(#brandGrad)"/></svg>
-      <span class="brand-word"><b>TAPCORE</b><i>MEDIA</i></span>
+    <a class="card" href="v2/">
+      <span class="v">v2</span>
+      <div>
+        <h2>"The Tap" <span class="tag mono">Latest</span></h2>
+        <p>Scroll-driven story inspired by Jesko Jets, Flim and Max Milkin: tap the ad and fly into the screen, the logo flies the buying-model funnel, physics playground, split service panels, global supply, live cursors.</p>
+      </div>
+      <span class="go" aria-hidden="true">→</span>
     </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="#models">Models</a>
-      <a href="#services">Services</a>
-      <a href="#supply">Supply</a>
-      <a href="#quality">Quality</a>
-      <a href="#process">Process</a>
-    </nav>
-    <a class="btn btn-ink nav-cta magnetic" href="#contact"><span>Propose a test</span></a>
-    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
-  </header>
 
-  <div class="menu" id="menu" hidden>
-    <nav aria-label="Mobile">
-      <a href="#models"><small>01</small>Models</a>
-      <a href="#services"><small>02</small>Services</a>
-      <a href="#supply"><small>03</small>Supply</a>
-      <a href="#quality"><small>04</small>Quality</a>
-      <a href="#process"><small>05</small>Process</a>
-      <a href="#contact"><small>06</small>Contact</a>
-    </nav>
-    <p>parth@tapcoremedia.net</p>
-  </div>
-
-  <main id="main">
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow intro" style="--d:0"><span class="dot"></span>Precision. Performance. Profit.</p>
-          <h1 class="hero-title" aria-label="Mobile growth, paid on outcomes.">
-            <span class="line"><span class="w" style="--d:1">Mobile</span> <span class="w" style="--d:2">growth,</span></span>
-            <span class="line"><span class="w" style="--d:3">paid</span> <span class="w" style="--d:4">on</span> <span class="w grad" style="--d:5">outcomes.</span></span>
-          </h1>
-          <p class="hero-sub intro" style="--d:6">
-            Performance user acquisition for Android and iOS apps. You pay for the
-            <span class="rotator" aria-live="polite"><span class="rot-word">installs</span></span>
-            that move your KPI.
-          </p>
-          <div class="hero-ctas intro" style="--d:7">
-            <a class="btn btn-grad magnetic" href="#contact"><span>Tell us your KPI</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <a class="btn btn-ghost magnetic" href="#models"><span>See buying models</span></a>
-          </div>
-          <ul class="hero-badges intro" style="--d:8">
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Live within 48 hours</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Optimized on post-install KPIs</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Android &amp; iOS</li>
-          </ul>
-        </div>
-
-        <!-- Live campaign phone (illustrative UI) -->
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orbit o1"></div><div class="orbit o2"></div>
-          <div class="phone tilt">
-            <div class="phone-notch"></div>
-            <div class="screen">
-              <div class="scr-head">
-                <span class="scr-logo"><svg><use href="#mark" fill="url(#brandGrad)"/></svg>Live campaign</span>
-                <span class="live"><i></i>LIVE</span>
-              </div>
-              <p class="scr-label">Installs today</p>
-              <p class="scr-big" data-ticker>12,480</p>
-              <svg class="spark" viewBox="0 0 220 70" preserveAspectRatio="none">
-                <defs><linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2B5BFF" stop-opacity=".28"/><stop offset="1" stop-color="#2B5BFF" stop-opacity="0"/></linearGradient></defs>
-                <path class="spark-area" d="M0 60 L20 55 L40 58 L60 46 L80 49 L100 38 L120 41 L140 28 L160 31 L180 18 L200 20 L220 8 L220 70 L0 70Z" fill="url(#sparkFill)"/>
-                <path class="spark-line" d="M0 60 L20 55 L40 58 L60 46 L80 49 L100 38 L120 41 L140 28 L160 31 L180 18 L200 20 L220 8"/>
-              </svg>
-              <div class="scr-kpis">
-                <div><small>Payable event</small><b>FTD</b></div>
-                <div><small>Fraud</small><b class="ok">Blocked</b></div>
-              </div>
-              <div class="feed"></div>
-            </div>
-          </div>
-          <div class="float f1"><span class="chip-ic blue">CPI</span><div><small>Model</small><b>Cost per install</b></div></div>
-          <div class="float f2"><span class="chip-ic lime">↑</span><div><small>Spend moves to</small><b>What performs</b></div></div>
-          <div class="float f3"><span class="chip-ic coral">✕</span><div><small>Weak source</small><b>Cut in real time</b></div></div>
-        </div>
+    <a class="card" href="v1/">
+      <span class="v">v1</span>
+      <div>
+        <h2>Bright motion site</h2>
+        <p>First version from the media kit: live campaign phone, buying-model journey, stacking service cards, dotted globe, fraud filter.</p>
       </div>
-
-      <div class="wrap">
-        <dl class="stats">
-          <div class="stat reveal"><dt>Countries</dt><dd><span data-count="80">0</span>+</dd></div>
-          <div class="stat reveal"><dt>Publishers</dt><dd><span data-count="1500">0</span>+</dd></div>
-          <div class="stat reveal"><dt>Ad exchanges integrated</dt><dd><span data-count="30">0</span>+</dd></div>
-          <div class="stat reveal"><dt>Touch points</dt><dd><span data-count="50">0</span>+</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- ============ TRUSTED BY ============ -->
-    <section class="trusted" aria-labelledby="trusted-title">
-      <div class="wrap">
-        <p class="eyebrow reveal">Trusted by</p>
-        <h2 class="h2 reveal" id="trusted-title">Brands that scale with Tapcore</h2>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="track">
-          <span>Kraken</span><span>Gemini</span><span>Bybit</span><span>Exness</span><span>Garanti</span><span>Banki.ru</span><span>Groww</span>
-          <span>Kraken</span><span>Gemini</span><span>Bybit</span><span>Exness</span><span>Garanti</span><span>Banki.ru</span><span>Groww</span>
-        </div>
-      </div>
-      <div class="marquee rev" aria-hidden="true">
-        <div class="track">
-          <span>Easycash</span><span>Julo</span><span>Fanatics Sportsbook</span><span>Caesars Sportsbook</span><span>Betfred</span><span>DHgate</span><span>Kashkick</span>
-          <span>Easycash</span><span>Julo</span><span>Fanatics Sportsbook</span><span>Caesars Sportsbook</span><span>Betfred</span><span>DHgate</span><span>Kashkick</span>
-        </div>
-      </div>
-      <div class="wrap">
-        <div class="verticals">
-          <article class="vert reveal" style="--c:var(--blue)"><span class="v-ic">₿</span><h3>Crypto &amp; trading</h3><p>Kraken · Gemini · Bybit · Exness</p></article>
-          <article class="vert reveal" style="--c:var(--cyan)"><span class="v-ic">◎</span><h3>Fintech &amp; banking</h3><p>Garanti · Banki.ru · Groww · Easycash · Julo</p></article>
-          <article class="vert reveal" style="--c:var(--coral)"><span class="v-ic">⚑</span><h3>Sports betting</h3><p>Fanatics Sportsbook · Caesars Sportsbook · Betfred</p></article>
-          <article class="vert reveal" style="--c:var(--violet)"><span class="v-ic">◈</span><h3>Commerce &amp; rewards</h3><p>DHgate · Kashkick</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ BUYING MODELS ============ -->
-    <section class="models" id="models" aria-labelledby="models-title">
-      <div class="wrap">
-        <div class="sec-head">
-          <p class="eyebrow reveal">Buying models</p>
-          <h2 class="h2 reveal" id="models-title">Pay for the event <br class="br-d">that matters to you.</h2>
-          <p class="lead reveal">Pick the moment in the user journey where you want to pay. We optimize everything before it.</p>
-        </div>
-
-        <div class="journey reveal">
-          <div class="j-inner">
-          <div class="j-rail"><span class="j-fill"></span><span class="j-pulse"></span></div>
-          <ol class="j-steps">
-            <li data-step="0"><i></i><span>Impression</span></li>
-            <li data-step="1"><i></i><span>Click</span></li>
-            <li data-step="2"><i></i><span>Install</span></li>
-            <li data-step="3"><i></i><span>Registration</span></li>
-            <li data-step="4"><i></i><span>In-app action</span></li>
-            <li data-step="5"><i></i><span>Sale</span></li>
-            <li data-step="6"><i></i><span>Revenue</span></li>
-          </ol>
-          </div>
-        </div>
-
-        <div class="model-ui">
-          <div class="model-tabs" role="tablist" aria-label="Buying models">
-            <button role="tab" aria-selected="true" data-model="cpi">CPI</button>
-            <button role="tab" aria-selected="false" data-model="cpa">CPA</button>
-            <button role="tab" aria-selected="false" data-model="cpr">CPR</button>
-            <button role="tab" aria-selected="false" data-model="cps">CPS</button>
-            <button role="tab" aria-selected="false" data-model="rev">Rev Share</button>
-            <button role="tab" aria-selected="false" data-model="cpc">CPC / CPM</button>
-          </div>
-          <div class="model-card" role="tabpanel" aria-live="polite">
-            <p class="m-tag">You pay when</p>
-            <h3 class="m-title">A user installs your app.</h3>
-            <p class="m-desc">Cost per install.</p>
-            <div class="m-foot">
-              <span>Android and iOS</span><span>Optimized on post-install KPIs</span><span>Live within 48 hours of links and creatives</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SERVICES (stacking cards) ============ -->
-    <section class="services" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="sec-head">
-          <p class="eyebrow reveal">What we do</p>
-          <h2 class="h2 reveal" id="services-title">Three ways we grow your app.</h2>
-        </div>
-
-        <div class="stack">
-          <article class="card c-ua">
-            <div class="card-copy">
-              <p class="card-kicker"><span>01</span> Core service</p>
-              <h3>Performance UA</h3>
-              <p>New users on CPI, CPA, CPR or CPS, optimized toward the post-install KPI you set.</p>
-              <ul class="ticks">
-                <li>Real-time traffic optimization</li>
-                <li>Low-quality sources cut fast</li>
-                <li>Winning audiences scaled</li>
-              </ul>
-            </div>
-            <div class="card-art art-bars" aria-hidden="true">
-              <span style="--h:28%"></span><span style="--h:42%"></span><span style="--h:36%"></span><span style="--h:58%"></span><span style="--h:52%"></span><span style="--h:74%"></span><span style="--h:68%"></span><span style="--h:92%"></span>
-              <em>Scale</em>
-            </div>
-          </article>
-
-          <article class="card c-rt">
-            <div class="card-copy">
-              <p class="card-kicker"><span>02</span> Win back inactive users</p>
-              <h3>Retargeting</h3>
-              <p>Bring inactive users back and grow revenue per user.</p>
-              <ul class="ticks">
-                <li>Cross-device targeting</li>
-                <li>Dynamic creatives with deep linking</li>
-                <li>Predictive bidding</li>
-                <li>Interactive ads across channels</li>
-              </ul>
-            </div>
-            <div class="card-art art-loop" aria-hidden="true">
-              <svg viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="70" class="loop-track"/>
-                <circle cx="100" cy="100" r="70" class="loop-run"/>
-                <g class="loop-dot"><circle cx="170" cy="100" r="9"/></g>
-              </svg>
-              <div class="loop-devices"><span class="dv phone-d"></span><span class="dv laptop-d"></span><span class="dv tv-d"></span></div>
-            </div>
-          </article>
-
-          <article class="card c-br">
-            <div class="card-copy">
-              <p class="card-kicker"><span>03</span> Be seen by the right people</p>
-              <h3>Branding</h3>
-              <p>Reach the right audience on premium global inventory.</p>
-              <ul class="ticks">
-                <li>Niche targeting with custom audiences</li>
-                <li>Premium apps and websites worldwide</li>
-                <li>First-party data activated through our audience builder and DMP</li>
-              </ul>
-            </div>
-            <div class="card-art art-target" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><b></b>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SUPPLY ============ -->
-    <section class="supply" id="supply" aria-labelledby="supply-title">
-      <div class="wrap supply-grid">
-        <div class="globe-wrap reveal">
-          <canvas class="globe" aria-hidden="true"></canvas>
-          <div class="globe-label"><b>1,500+</b> publishers across <b>80+</b> countries</div>
-        </div>
-        <div class="supply-copy">
-          <p class="eyebrow reveal">Our supply</p>
-          <h2 class="h2 reveal" id="supply-title">Where your ads run.</h2>
-          <ul class="sources">
-            <li class="reveal"><span class="s-ic"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><div><h3>In-app publishers</h3><p>Direct relationships with app owners</p></div></li>
-            <li class="reveal"><span class="s-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><div><h3>Website owners</h3><p>Direct web inventory</p></div></li>
-            <li class="reveal"><span class="s-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg></span><div><h3>Programmatic</h3><p>30+ ad exchanges integrated</p></div></li>
-            <li class="reveal"><span class="s-ic"><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></span><div><h3>SDK inventory</h3><p>SDK-integrated app supply</p></div></li>
-          </ul>
-          <div class="inventory reveal">
-            <p class="inv-title">Inventory by app category</p>
-            <div class="bar"><span>Entertainment</span><i style="--v:29"></i><b>29%</b></div>
-            <div class="bar"><span>Shopping</span><i style="--v:28"></i><b>28%</b></div>
-            <div class="bar"><span>Gaming</span><i style="--v:24"></i><b>24%</b></div>
-            <div class="bar"><span>Utility</span><i style="--v:8"></i><b>8%</b></div>
-            <div class="bar"><span>Travel</span><i style="--v:6"></i><b>6%</b></div>
-            <div class="bar"><span>Finance</span><i style="--v:5"></i><b>5%</b></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ AD FORMATS ============ -->
-    <section class="formats" aria-labelledby="formats-title">
-      <div class="wrap fmt-head">
-        <div>
-          <p class="eyebrow reveal">Ad formats</p>
-          <h2 class="h2 reveal" id="formats-title">Built for every placement.</h2>
-        </div>
-        <p class="lead reveal">Creatives are tailor-made for each campaign. Offer walls are not used on finance or crypto campaigns.</p>
-      </div>
-      <div class="fmt-scroller" tabindex="0" aria-label="Ad formats, scroll horizontally">
-        <div class="fmt-track">
-          <figure class="fmt"><div class="mini m-banner"><i class="ln"></i><i class="ln s"></i><i class="ln"></i><i class="ln s"></i><b></b></div><figcaption><span>01</span>Banner</figcaption></figure>
-          <figure class="fmt"><div class="mini m-native"><i class="ln"></i><div class="nat"><span></span><i class="ln"></i><i class="ln s"></i></div><i class="ln"></i><i class="ln s"></i></div><figcaption><span>02</span>Native</figcaption></figure>
-          <figure class="fmt"><div class="mini m-inter"><div class="full"><em>✕</em><span></span><b>Install</b></div></div><figcaption><span>03</span>Interstitial</figcaption></figure>
-          <figure class="fmt"><div class="mini m-video"><div class="vid"><span class="play"></span><i class="vbar"></i></div><i class="ln"></i><i class="ln s"></i></div><figcaption><span>04</span>Video</figcaption></figure>
-          <figure class="fmt"><div class="mini m-play"><div class="grid9"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="tap"></span></div><figcaption><span>05</span>Playable</figcaption></figure>
-          <figure class="fmt"><div class="mini m-carousel"><div class="car"><span></span><span></span><span></span></div><div class="dots"><i></i><i></i><i></i></div></div><figcaption><span>06</span>Carousel</figcaption></figure>
-          <figure class="fmt"><div class="mini m-wall"><div class="offer"><span></span><i class="ln"></i><b></b></div><div class="offer"><span></span><i class="ln"></i><b></b></div><div class="offer"><span></span><i class="ln"></i><b></b></div></div><figcaption><span>07</span>Offer wall</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ QUALITY ============ -->
-    <section class="quality" id="quality" aria-labelledby="quality-title">
-      <div class="wrap quality-grid">
-        <div>
-          <p class="eyebrow reveal">Traffic quality</p>
-          <h2 class="h2 reveal" id="quality-title">Quality you can verify.</h2>
-          <ul class="q-list">
-            <li class="reveal"><span>01</span><div><h3>No incentive traffic on finance</h3><p>No incentive or reward-based publishers on finance and crypto campaigns.</p></div></li>
-            <li class="reveal"><span>02</span><div><h3>Fraud detected and blocked</h3><p>In-house data analysts plus third-party anti-fraud tools.</p></div></li>
-            <li class="reveal"><span>03</span><div><h3>Weak sources removed in real time</h3><p>Live data analysis cuts low-quality traffic and scales what works.</p></div></li>
-          </ul>
-        </div>
-        <div class="filter-card reveal">
-          <div class="filter-top">
-            <span><i class="dot-ok"></i>Clean users</span>
-            <span><i class="dot-bad"></i>Blocked <b data-blocked>0</b></span>
-          </div>
-          <canvas class="filter" aria-hidden="true"></canvas>
-          <div class="partners">
-            <div><p>Tracking &amp; attribution</p><ul><li>AppsFlyer</li><li>Adjust</li><li>Singular</li><li>Branch</li></ul></div>
-            <div><p>Fraud prevention</p><ul><li>Protect360</li><li>Interceptd</li><li>FraudScore</li></ul></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROCESS ============ -->
-    <section class="process" id="process" aria-labelledby="process-title">
-      <div class="wrap">
-        <div class="sec-head">
-          <p class="eyebrow reveal">How we work</p>
-          <h2 class="h2 reveal" id="process-title">Target, measure, <br class="br-d">optimize, scale.</h2>
-        </div>
-        <div class="steps">
-          <div class="steps-line"><span></span></div>
-          <article class="step reveal"><span class="n">01</span><h3>Target</h3><p>Show ads to the most relevant audience.</p></article>
-          <article class="step reveal"><span class="n">02</span><h3>Measure</h3><p>Track touch points, your KPIs and user engagement.</p></article>
-          <article class="step reveal"><span class="n">03</span><h3>Optimize</h3><p>Move spend toward what performs.</p></article>
-          <article class="step reveal"><span class="n">04</span><h3>Scale</h3><p>Grow volume toward your targets and ROI.</p></article>
-        </div>
-        <p class="report reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15l4-4 3 3 5-6"/></svg>Detailed, automated reports on a regular schedule, so you always see what you pay for.</p>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <div class="cta-panel">
-          <div class="cta-copy">
-            <p class="eyebrow light reveal">Start a test</p>
-            <h2 class="h2 reveal" id="contact-title">Tell us your KPI. <br>We will propose a test.</h2>
-            <ul class="cta-chips reveal">
-              <li>One GEO</li><li>One payable event</li><li>A clear budget</li>
-            </ul>
-            <p class="cta-note reveal">Live within 48 hours of tracking links and creatives.</p>
-            <div class="person reveal">
-              <span class="avatar">PS</span>
-              <div>
-                <b>Parth Singh</b>
-                <small>Business Development Manager</small>
-                <a href="mailto:parth@tapcoremedia.net">parth@tapcoremedia.net</a>
-              </div>
-            </div>
-          </div>
-
-          <form class="form reveal" id="leadForm" novalidate>
-            <div class="field"><input id="f-name" name="name" required placeholder=" " autocomplete="name"><label for="f-name">Your name</label></div>
-            <div class="field"><input id="f-email" name="email" type="email" required placeholder=" " autocomplete="email"><label for="f-email">Work email</label></div>
-            <div class="field"><input id="f-app" name="app" placeholder=" "><label for="f-app">App name or store link</label></div>
-            <div class="field-row">
-              <div class="field"><select id="f-model" name="model"><option>CPI</option><option>CPA</option><option>CPR</option><option>CPS</option><option>Rev Share</option><option>CPC / CPM</option></select><label for="f-model" class="fixed">Payable event</label></div>
-              <div class="field"><input id="f-geo" name="geo" placeholder=" "><label for="f-geo">Target GEO</label></div>
-            </div>
-            <div class="field"><textarea id="f-msg" name="msg" rows="3" placeholder=" "></textarea><label for="f-msg">KPI and budget</label></div>
-            <button class="btn btn-lime magnetic" type="submit"><span>Send brief</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-            <p class="form-msg" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </section>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
   </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      <div class="foot-top">
-        <a class="brand" href="#top" aria-label="Tapcore Media home">
-          <svg class="brand-mark" aria-hidden="true"><use href="#mark" fill="url(#brandGrad)"/></svg>
-          <span class="brand-word"><b>TAPCORE</b><i>MEDIA</i></span>
-        </a>
-        <nav class="foot-links" aria-label="Footer">
-          <a href="#models">Models</a><a href="#services">Services</a><a href="#supply">Supply</a><a href="#quality">Quality</a><a href="#process">Process</a><a href="#contact">Contact</a>
-        </nav>
-        <a class="foot-mail" href="mailto:parth@tapcoremedia.net">parth@tapcoremedia.net</a>
-      </div>
-      <p class="mega" aria-hidden="true">TAPCORE</p>
-      <div class="foot-bottom">
-        <span>© <span data-year>2026</span> Tapcore Media</span>
-        <span>Precision. Performance. Profit.</span>
-        <a href="#top">Back to top ↑</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
