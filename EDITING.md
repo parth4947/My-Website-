@@ -15,19 +15,9 @@ Every change saved to `v6` on GitHub goes live by itself in about 1 minute (Verc
 
 To undo: in Vercel, open **Deployments**, select the deployment from before the change, then **Promote to Production** (Instant Rollback).
 
-## Remove the phone number / WhatsApp
+## Phone number / WhatsApp
 
-The number is in 5 places: 3 in `v6/index.html` and 2 in `v6/assets/js/main.js`.
-
-| # | File | Search for | Delete |
-|---|---|---|---|
-| 1 | `v6/index.html` | `· +91 96258 98987` (mobile menu) | Delete only ` · +91 96258 98987`. Keep `tanu@tapcoremedia.com`. |
-| 2 | `v6/index.html` | `<dt class="mono">WhatsApp</dt>` (contact section) | Delete that whole line, from `<div><dt class="mono">WhatsApp</dt>` to its ending `</div>`. |
-| 3 | `v6/index.html` | `data-wa` (contact form) | Delete the whole line `<button class="btn btn-green" type="button" data-wa>Send on WhatsApp</button>`. |
-| 4 | `v6/index.html` | `wa.me` (footer) | Delete only `<a href="https://wa.me/919625898987" target="_blank" rel="noopener">WhatsApp</a>`. |
-| 5 | `v6/assets/js/main.js` | `data-wa` | Delete the block that starts with `$("[data-wa]", form).addEventListener("click", () => {` and ends with the matching `});` (6 lines). If you skip this step after step 3, the form stops working. |
-
-Check after saving: search `v6/index.html` and `v6/assets/js/main.js` for `9625`. There must be no results.
+Removed from v6 in October 2026 (no `9625` or `wa.me` left). To add a phone number again, ask Claude or a developer.
 
 ## Other contact details
 
