@@ -4,7 +4,7 @@ Every design version lives in its own folder, so earlier versions stay intact. (
 
 | Version | Folder | Git tag | Summary |
 |---|---|---|---|
-| v6 | [`v6/`](v6/) | `v6` | Manifesto refined (frame lines, blur-to-focus letters, strike through "advertise", focus brackets on "attention"); Supply holds while "Global" travels right to left; About headline set in the site's wide Archivo. |
+| v6 | [`v6/`](v6/) | `v6` | Manifesto refined (frame lines, blur-to-focus letters, strike through "advertise", focus brackets on "attention"); "Global" drifts right to left as in v4; About headline set in the site's wide Archivo. |
 | v5 | [`v5/`](v5/) | `v5` | "The Tap", final: editorial About section (statement headline, two short notes, light stats) with a one-time word reveal; business development contact is Tanu Singh, tanu@tapcoremedia.com. |
 | v4 | [`v4/`](v4/) | `v4` | "The Tap", polished: About letters in two wedges of vertical type, Supply with a region orbit and stats strip, richer ad-format animations with arrow buttons, Ad formats before How we work. |
 | v3 | [`v3/`](v3/) | `v3` | "The Tap", refined: smoother fly-through hero, minimal manifesto, About letter assembly, softer services with clear numbers, client and publisher logos, clients before supply, clearer section labels. |
@@ -53,6 +53,6 @@ Each version folder is a complete static site. Upload the contents of one folder
 ## v6 notes
 
 - **Manifesto**: the letters assemble and come into focus (blur to sharp) between two hairline frame lines. A line then strikes through "advertise." and blue focus brackets close around "attention.".
-- **Supply**: the stage pins for one screen of scroll while "Global" travels from the right edge to the left, and the globe grows slightly.
+- **Supply**: "Global" drifts from right to left as the section scrolls past, with no pin (same motion as v4, slightly longer travel).
 - **About**: the headline now uses the same wide Archivo as other headings; "results" uses the brand gradient. Instrument Serif is no longer loaded.
 - **Going live**: in Vercel, set the project's Root Directory to `v6`.

@@ -405,12 +405,11 @@
     gsap.from(".rt-notif", { y: 30, opacity: 0, duration: 0.9, stagger: 0.25, ease: "back.out(1.6)", scrollTrigger: { trigger: ".ui-rt", start: "top 80%" } });
 
     /* ----- GLOBAL: the word slides behind the globe ----- */
-    // The stage holds for one scroll length while "Global" travels from the right edge to the left.
+    // "Global" drifts from right to left as the section scrolls past (no pin, as in v4).
     gsap.set(".global-word", { xPercent: -50, yPercent: -54 });
     gsap.set(".orb-ring", { xPercent: -50, yPercent: -50, rotation: -14 });
-    gsap.timeline({ scrollTrigger: { trigger: ".global-stage", start: "top top", end: "+=110%", pin: true, scrub: 1, invalidateOnRefresh: true } })
-      .fromTo(".global-word", { xPercent: -6 }, { xPercent: -94, ease: "none" }, 0)
-      .fromTo([".globe", ".orb-ring"], { scale: 0.88 }, { scale: 1.06, ease: "none" }, 0);
+    gsap.fromTo(".global-word", { xPercent: -24 }, { xPercent: -78, ease: "none", scrollTrigger: { trigger: ".global-stage", start: "top bottom", end: "bottom top", scrub: true } });
+    gsap.fromTo([".globe", ".orb-ring"], { scale: 0.82 }, { scale: 1.08, ease: "none", scrollTrigger: { trigger: ".global-stage", start: "top bottom", end: "bottom top", scrub: true } });
     gsap.from(".g-strip > div", { opacity: 0, y: 26, duration: 1, stagger: 0.1, ease: "power3.out", scrollTrigger: { trigger: ".global-stage", start: "top 45%" } });
     gsap.from(".bar i", { scaleX: 0, duration: 1.3, stagger: 0.08, ease: "power3.out", scrollTrigger: { trigger: ".g-inv", start: "top 85%" } });
     gsap.from(".g-card", { y: 60, opacity: 0, duration: 1, stagger: 0.12, ease: "power3.out", scrollTrigger: { trigger: ".global-grid", start: "top 88%" } });
