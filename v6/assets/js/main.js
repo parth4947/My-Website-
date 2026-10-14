@@ -805,12 +805,6 @@
     location.href = `mailto:tanu@tapcoremedia.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(r.body)}`;
     msgEl.textContent = "Thanks! Your email app is opening with the brief ready to send.";
   });
-  $("[data-wa]", form).addEventListener("click", () => {
-    const r = readForm();
-    if (!r) return;
-    window.open(`https://wa.me/919625898987?text=${encodeURIComponent("Hi Tapcore, here is a test brief.\n\n" + r.body)}`, "_blank", "noopener");
-    msgEl.textContent = "Opening WhatsApp with your brief.";
-  });
 
   /* ---------- Final refresh once fonts settle ---------- */
   if (motion) {
